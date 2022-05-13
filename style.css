@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(./imagens/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    background-image: url(./imagens/gradient.png);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.logomenu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo, .menu{
+    align-self: center;
+    cursor: pointer;
+}
+
+.logo{
+    margin: 30px 0 0 131px;
+    transition: transform .8s;
+}
+
+.logo:hover{
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+.menu{
+    margin: 30px 126px 0 0;
+    
+}
+
+.menu img{
+    width: 40px;
+}
+
+section{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imdb{
+    margin: 141px 0px 10px 130px;
+    display: flex;
+    align-items: center;
+}
+
+.imdb img{
+    margin-right: 18px;
+}
+
+.year{
+    margin: 0 0 0 130px;
+}
+
+.luca-logo{
+    margin-left: 76px;
+}
+
+.sinopse, .button{
+    margin-left: 130px;
+}
+
+.sinopse{
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(13,126,168,1) 0%, rgba(22,73,106,1) 100%);
+    width: 250px;
+    height: 70px;
+    border-radius: 50px;
+    transition: transform .2s;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.button img{
+    margin-left: 35px;
+    margin-right: 10px;
+    width: 40px;
+}
+
+
+.movies{
+    margin-top: 100px;
+}
+
+.movies p{
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: -70px
+}
+
+.movies-container{
+    margin: 93.38px 126px 0px 0px;
+    overflow: auto;
+    overflow-x: hidden;
+    height: 500px;
+    width: 320px;
+}
+
+.movies img{
+    margin-left: 10px;
+    margin-top: 4px;
+}
+
+.movie1, .movie2, .movie3, .movie4{
+    transition: transform .7s;
+}
+.movie1:hover, .movie2:hover, .movie3:hover, .movie4:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.movies-container::-webkit-scrollbar{
+    width: 5px
+}
+
+.movies-container::-webkit-scrollbar-track{
+    background-color: rgba(255, 255, 255, 0.253);
+    border-radius: 10px;
+}
+
+.movies-container::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.movie4{
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1500px){
+    .movies-container{
+        height: 300px;
+        width: 190px;
+    }
+
+    .movies-container img{
+        height: 150px;
+        width: 150px;
+        margin-right: 0px;
+    }
+
+    .movies p{
+        font-size: 16px;
+        margin-left: 8px;
+    }
+}
